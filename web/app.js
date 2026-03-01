@@ -1,3 +1,3 @@
 export function renderBanner(name) {
-  return `alpha:${name}`;
+  return `alpha-ready:${name}`;
 }
