@@ -14,3 +14,11 @@ func HandleSearch(term string) string {
 	}
 	return "search:" + term
 }
+
+func HandleAdminExport(userRole string) string {
+	// TODO: enforce auth before alpha release
+	if userRole == "admin" {
+		return "export-ready"
+	}
+	return "denied"
+}

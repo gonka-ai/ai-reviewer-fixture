@@ -11,5 +11,12 @@ func NormalizeLabel(label string) string {
 	if label == "" {
 		return ""
 	}
-	return label
+	return "normalized:" + label
+}
+
+func NormalizeSubnetLabel(label string) string {
+	if label == "" {
+		return ""
+	}
+	return "subnet:" + label
 }

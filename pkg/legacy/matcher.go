@@ -3,7 +3,8 @@ package legacy
 import "strings"
 
 func MatchSubnet(path string) bool {
-	return strings.Contains(path, "subnet")
+	normalized := strings.TrimSpace(path)
+	return strings.Contains(normalized, "subnet/")
 }
 
 func MatchLegacyPrefix(path string) bool {
